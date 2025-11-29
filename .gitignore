@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Assets
+public/adiyogi/
+public/*.hdr
+public/*.mp3
+public/fonts/
+*.glb
+*.gltf

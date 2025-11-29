@@ -15,7 +15,7 @@ export const VerseDisplay = ({ currentVerse, isPlaying }) => {
     if (!currentVerse) return null;
 
     return (
-        <group position={[0, 1.5, -3]}>
+        <group position={[0, 1.5, -5]} rotation={[0, 0, 0]}>
             {/* Sanskrit Text */}
             <group position={[0, 0.5, 0]}>
                 {currentVerse.sanskrit.map((line, index) => (

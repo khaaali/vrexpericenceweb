@@ -7,6 +7,7 @@ import { BreathingGuide } from './BreathingGuide';
 import { MeditationTimer } from './MeditationTimer';
 import { Effects } from './Effects';
 import { ControlPanel } from './ControlPanel';
+import { AdiyogiGallery } from './AdiyogiGallery';
 import { verses } from '../data/verses';
 import * as THREE from 'three';
 
@@ -126,6 +127,11 @@ export const Experience = () => {
                 onNextVerse={handleNextVerse}
                 onPrevVerse={handlePrevVerse}
             />
+
+            {/* Adiyogi Gallery - Large Backdrop */}
+            <React.Suspense fallback={null}>
+                <AdiyogiGallery position={[0, 2, 8]} />
+            </React.Suspense>
 
             {/* Start/Stop Interaction */}
             <group position={[0, -1, -2]} onClick={handleStart}>
