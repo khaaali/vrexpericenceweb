@@ -7,7 +7,7 @@ export const verses = [
       "न च व्योम भूमिर्-न तेजो न वायुः",
       "चिदानन्द रूपः शिवोऽहं शिवोऽहम् ॥ 1 ॥"
     ],
-    translation: "I am not mind, nor intellect, nor ego, nor the reflections of inner self. I am not the five senses. I am beyond that. I am not the ether, nor the earth, nor the fire, nor the wind. I am indeed, That eternal knowing and bliss, Shiva, love and pure consciousness."
+    translation: "मैं न तो मन हूँ, न बुद्धि हूँ, न अहंकार हूँ और न ही चित्त हूँ। मैं न तो कान हूँ, न जीभ हूँ, न नाक हूँ और न ही नेत्र हूँ। मैं न तो आकाश हूँ, न धरती हूँ, न अग्नि हूँ और न ही वायु हूँ। मैं तो शुद्ध चेतना आनंद स्वरूप हूँ, अनादि, अनंत शिव हूँ।"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const verses = [
       "नवाक्पाणि पादौ न चोपस्थ पायू",
       "चिदानन्द रूपः शिवोऽहं शिवोऽहम् ॥ 2 ॥"
     ],
-    translation: "Neither can I be termed as energy (prana), nor five types of breath (vayus), nor the seven material essences, nor the five sheaths (pancha-kosha). Neither am I the five instruments of elimination, procreation, motion, grasping, or speaking. I am indeed, That eternal knowing and bliss, Shiva, love and pure consciousness."
+    translation: "मैं न तो प्राण हूँ और न ही पंच वायु हूँ। मैं न शरीर की सात धातुएँ हूँ और न ही पाँच कोश हूँ। मैं न वाणी हूँ, न हाथ, न पैर, न जननेंद्रिय और न गुदा हूँ। मैं तो शुद्ध चेतना आनंद स्वरूप हूँ, अनादि, अनंत शिव हूँ।"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const verses = [
       "न धर्मो न चार्धो न कामो न मोक्षः",
       "चिदानन्द रूपः शिवोऽहं शिवोऽहम् ॥ 3 ॥"
     ],
-    translation: "I have no hatred or dislike, nor affiliation or liking, nor greed, nor delusion, nor pride or haughtiness, nor feelings of envy or jealousy. I have no duty (dharma), nor any money, nor any desire (kama), nor even liberation (moksha). I am indeed, That eternal knowing and bliss, Shiva, love and pure consciousness."
+    translation: "न मुझमें द्वेष है और न ही राग; न लोभ है और न मोह। न मुझमें मद (अहंकार) है और न ही ईर्ष्या का भाव है। मैं न धर्म हूँ, न अर्थ हूँ, न काम हूँ और न ही मोक्ष हूँ। मैं तो शुद्ध चेतना आनंद स्वरूप हूँ, अनादि, अनंत शिव हूँ।"
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const verses = [
       "अहं भोजनं नैव भोज्यं न भोक्ता",
       "चिदानन्द रूपः शिवोऽहं शिवोऽहम् ॥ 4 ॥"
     ],
-    translation: "I have neither merit (virtue), nor demerit (vice). I do not commit sins or good deeds, nor have happiness or sorrow, pain or pleasure. I do not need mantras, holy places, scriptures, rituals or sacrifices. I am none of the triad of the observer or one who experiences, the process of observing or experiencing, or any object being observed or experienced. I am indeed, That eternal knowing and bliss, Shiva, love and pure consciousness."
+    translation: "मैं न पुण्य हूँ, न पाप हूँ; न सुख हूँ और न ही दुःख हूँ। न मुझे मंत्रों, तीर्थों, वेदों और यज्ञों में रुचि है। न मैं भोजन हूँ, न ही मैं भोगने के लायक हूँ और न ही मैं भोगी हूँ। मैं तो शुद्ध चेतना आनंद स्वरूप हूँ, अनादि, अनंत शिव हूँ।"
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const verses = [
       "न बन्धुर्-न मित्रं गुरुर्नैव शिष्यः",
       "चिदानन्द रूपः शिवोऽहं शिवोऽहम् ॥ 5 ॥"
     ],
-    translation: "I do not have fear of death, as I do not have death. I have no separation from my true self, no doubt about my existence, nor have I discrimination on the basis of birth. I have no father or mother, nor did I have a birth. I am not the relative, nor the friend, nor the guru, nor the disciple. I am indeed, That eternal knowing and bliss, Shiva, love and pure consciousness."
+    translation: "न मुझे मृत्यु का भय है और न ही कोई शंका है, न ही जाति भेद का कोई डर है। न मेरा कोई पिता है और न कोई माता है, न ही मेरा कोई जन्म हुआ है। न मेरा कोई भाई-बंधु है, न मित्र है, न ही कोई गुरु और न ही कोई शिष्य है। मैं तो शुद्ध चेतना आनंद स्वरूप हूँ, अनादि, अनंत शिव हूँ।"
   },
   {
     id: 6,
@@ -57,6 +57,6 @@ export const verses = [
       "न वा बन्धनं नैवर्-मुक्ति न बन्धः ।",
       "चिदानन्द रूपः शिवोऽहं शिवोऽहम् ॥ 6 ॥"
     ],
-    translation: "I am all pervasive. I am without any attributes, and without any form. I have neither attachment to the world, nor to liberation. I have no wishes for anything because I am everything, everywhere, every time, always in equilibrium. I am indeed, That eternal knowing and bliss, Shiva, love and pure consciousness."
+    translation: "मैं निर्विकल्प हूँ, मेरा रूप निराकार है और मैं चैतन्य के रूप में सभी जगह व्याप्त हूँ, सभी इन्द्रियों में व्याप्त हूँ। न मैं किसी वस्तु से बंधा हूँ और न ही उस वस्तु से मुक्त हूँ। मैं तो शुद्ध चेतना आनंद स्वरूप हूँ, अनादि, अनंत शिव हूँ।"
   }
 ];

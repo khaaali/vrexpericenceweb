@@ -40,11 +40,19 @@ export const Experience = () => {
         setIsPlaying(!isPlaying);
     };
 
+    const lastClickTimeRef = useRef(0);
+
     const handleNextVerse = () => {
+        const now = Date.now();
+        if (now - lastClickTimeRef.current < 300) return; // 300ms debounce
+        lastClickTimeRef.current = now;
         setCurrentVerseIndex((prev) => (prev + 1) % verses.length);
     };
 
     const handlePrevVerse = () => {
+        const now = Date.now();
+        if (now - lastClickTimeRef.current < 300) return; // 300ms debounce
+        lastClickTimeRef.current = now;
         setCurrentVerseIndex((prev) => (prev - 1 + verses.length) % verses.length);
     };
 
@@ -104,21 +112,15 @@ export const Experience = () => {
                 />
             </mesh>
 
-            {/* Meditation Features */}
-            <BreathingGuide position={[0, 1.5, -4]} />
-            <MeditationTimer
-                duration={600}
-                position={[2.5, 1.5, -2.5]}
-                rotation={[0, -0.5, 0]}
-                onComplete={() => setIsPlaying(false)}
-            />
+            {/* Verse Display - Center (Shifted Right) */}
+            <group position={[1.5, 0, 0]}>
+                <VerseDisplay
+                    currentVerse={verses[currentVerseIndex]}
+                    isPlaying={isPlaying}
+                />
+            </group>
 
-            <VerseDisplay
-                currentVerse={verses[currentVerseIndex]}
-                isPlaying={isPlaying}
-            />
-
-            {/* Control Panel */}
+            {/* Control Panel - Right Side (Shifted Right) */}
             <ControlPanel
                 isPlaying={isPlaying}
                 onPlayPause={handleStart}
@@ -128,9 +130,9 @@ export const Experience = () => {
                 onPrevVerse={handlePrevVerse}
             />
 
-            {/* Adiyogi Gallery - Large Backdrop */}
+            {/* Adiyogi Gallery - Left Side (Next to controls in field of view) */}
             <React.Suspense fallback={null}>
-                <AdiyogiGallery position={[0, 2, 8]} />
+                <AdiyogiGallery position={[-3.5, 2, -5]} />
             </React.Suspense>
 
             {/* Start/Stop Interaction */}

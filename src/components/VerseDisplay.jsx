@@ -15,7 +15,7 @@ export const VerseDisplay = ({ currentVerse, isPlaying }) => {
     if (!currentVerse) return null;
 
     return (
-        <group position={[0, 1.5, -5]} rotation={[0, 0, 0]}>
+        <group position={[0, 1.2, -4]} rotation={[0, 0, 0]}>
             {/* Sanskrit Text */}
             <group position={[0, 0.5, 0]}>
                 {currentVerse.sanskrit.map((line, index) => (
@@ -38,15 +38,16 @@ export const VerseDisplay = ({ currentVerse, isPlaying }) => {
                 ))}
             </group>
 
-            {/* English Translation */}
+            {/* Hindi Translation */}
             <Text
                 position={[0, -1.5, 0]}
-                fontSize={0.12}
+                fontSize={0.15}
                 color="#ffffff"
                 maxWidth={4}
                 textAlign="center"
                 anchorX="center"
                 anchorY="top"
+                font="/fonts/NotoSansDevanagari.ttf"
                 fillOpacity={opacity}
                 outlineWidth={0.01}
                 outlineColor="#000000"

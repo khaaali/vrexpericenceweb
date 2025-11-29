@@ -11,7 +11,7 @@ export const ControlPanel = ({
     onPrevVerse
 }) => {
     return (
-        <group position={[3, 0, -3]} rotation={[0, -0.3, 0]}>
+        <group position={[4.5, 0, -3]} rotation={[0, -0.4, 0]}>
             {/* Panel Background */}
             <mesh position={[0, 0, 0]}>
                 <planeGeometry args={[1.8, 2.5]} />
@@ -39,21 +39,16 @@ export const ControlPanel = ({
 
             {/* Play/Pause Button */}
             <group position={[0, 0.5, 0]} onClick={onPlayPause}>
-                <mesh>
-                    <circleGeometry args={[0.25, 32]} />
-                    <meshStandardMaterial
-                        color={isPlaying ? "#ff6b6b" : "#00ff88"}
-                        emissive={isPlaying ? "#ff6b6b" : "#00ff88"}
-                        emissiveIntensity={0.5}
-                    />
-                </mesh>
+                {/* Removed circle background */}
                 <Text
                     position={[0, 0, 0.01]}
-                    fontSize={0.15}
-                    color="#000000"
+                    fontSize={0.3}
+                    color={isPlaying ? "#ff6b6b" : "#00ff88"}
                     anchorX="center"
                     anchorY="middle"
                     fontWeight="bold"
+                    outlineWidth={0.01}
+                    outlineColor="#000000"
                 >
                     {isPlaying ? '⏸' : '▶'}
                 </Text>

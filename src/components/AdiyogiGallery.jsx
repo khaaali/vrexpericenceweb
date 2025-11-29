@@ -104,16 +104,35 @@ const MistyImageMaterial = {
 const adiyogiImages = [
     '/adiyogi/Adiyogi_Shiva_steel_burst_2018.jpg',
     '/adiyogi/adiyogi-shiva-statue-795092.jpg',
-    '/adiyogi/wallpaper-289.jpeg',
-    '/adiyogi/wallpaper-750.jpeg',
-    '/adiyogi/wallpaper-943.jpeg',
-    '/adiyogi/wallpaper-90.jpeg',
-    '/adiyogi/wallpaper-922.jpeg',
-    '/adiyogi/wallpaper-871.jpeg',
-    '/adiyogi/wallpaper-847.jpeg',
-    '/adiyogi/wallpaper-730.jpeg',
+    '/adiyogi/wallpaper-149.jpeg',
+    '/adiyogi/wallpaper-162.jpeg',
     '/adiyogi/wallpaper-174.jpeg',
-    '/adiyogi/wallpaper-371.jpeg'
+    '/adiyogi/wallpaper-184.jpeg',
+    '/adiyogi/wallpaper-288.jpeg',
+    '/adiyogi/wallpaper-289.jpeg',
+    '/adiyogi/wallpaper-311.jpeg',
+    '/adiyogi/wallpaper-432.jpeg',
+    '/adiyogi/wallpaper-436.jpeg',
+    '/adiyogi/wallpaper-438.jpeg',
+    '/adiyogi/wallpaper-471.jpeg',
+    '/adiyogi/wallpaper-562.jpeg',
+    '/adiyogi/wallpaper-578.jpeg',
+    '/adiyogi/wallpaper-582.jpeg',
+    '/adiyogi/wallpaper-601.jpeg',
+    '/adiyogi/wallpaper-602.jpeg',
+    '/adiyogi/wallpaper-68.jpeg',
+    '/adiyogi/wallpaper-718.jpeg',
+    '/adiyogi/wallpaper-730.jpeg',
+    '/adiyogi/wallpaper-771.jpeg',
+    '/adiyogi/wallpaper-819.jpeg',
+    '/adiyogi/wallpaper-841.jpeg',
+    '/adiyogi/wallpaper-847.jpeg',
+    '/adiyogi/wallpaper-861.jpeg',
+    '/adiyogi/wallpaper-871.jpeg',
+    '/adiyogi/wallpaper-884.jpeg',
+    '/adiyogi/wallpaper-892.jpeg',
+    '/adiyogi/wallpaper-978.jpeg',
+    '/adiyogi/wallpaper-983.jpeg'
 ];
 
 export const AdiyogiGallery = ({ position = [0, 2, 8] }) => {
@@ -160,7 +179,14 @@ export const AdiyogiGallery = ({ position = [0, 2, 8] }) => {
 
         // Once fully faded out, switch image and fade in
         if (targetOpacity === 0 && opacity <= 0.01) {
-            setCurrentImageIndex((prev) => (prev + 1) % adiyogiImages.length);
+            // Pick a random image different from current
+            setCurrentImageIndex((prev) => {
+                let nextIndex;
+                do {
+                    nextIndex = Math.floor(Math.random() * adiyogiImages.length);
+                } while (nextIndex === prev && adiyogiImages.length > 1);
+                return nextIndex;
+            });
             timeRef.current = 0;
             setTargetOpacity(1);
         }
@@ -183,7 +209,7 @@ export const AdiyogiGallery = ({ position = [0, 2, 8] }) => {
     const width = height * aspectRatio;
 
     return (
-        <group position={position} rotation={[0, Math.PI, 0]}>
+        <group position={position} rotation={[0, 0.4, 0]}>
             <mesh ref={meshRef}>
                 <planeGeometry args={[width, height, 32, 32]} />
                 <shaderMaterial
